@@ -24,6 +24,6 @@ describe('test', function() {
       cy.get('#user').clear().type('misgorod');
       cy.get('#butt').click();
       cy.wait('@getRepos');
-      cy.get('.outer').find('.repo').its('length').should('eq', 11);
+      cy.get('.outer').find('.repo').its('length').should('eq', 12);
     })
   })
